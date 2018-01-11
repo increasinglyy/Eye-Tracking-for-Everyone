@@ -11,7 +11,7 @@ def test_small(args):
     os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
     os.environ["CUDA_VISIBLE_DEVICES"] = args.dev
 
-    dataset_path = "data\save_me.npz"
+    dataset_path = "eye_tracker_train_and_val.npz"
     print('small_11111111111')
     print("Dataset: {}".format(dataset_path))
 

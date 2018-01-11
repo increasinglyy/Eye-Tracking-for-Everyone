@@ -115,7 +115,6 @@ def get_eye_tracker_model(img_ch, img_cols, img_rows):
     # dense layers for face
     f = Flatten()(face_net)
     fc_f1 = Dense(128, activation=activation)(f)
-    #fc_f2 = Dense(64, activation=activation)(fc_f1)
     
     print('1')
     g = concatenate([fc_e1,fc_f1])
